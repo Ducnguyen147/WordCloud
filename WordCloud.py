@@ -5,7 +5,7 @@ from PIL import Image
 
 text=open('C:\\Users\ADmin\Documents\wordcloud.txt','r').read()
 
-wc=WordCloud()
+wc=WordCloud(background_color='white')
 wc.generate(text)
 
 plt.imshow(wc,interpolation='bilinear')
